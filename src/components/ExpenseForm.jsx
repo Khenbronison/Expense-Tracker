@@ -32,7 +32,7 @@ function ExpenseForm({onAddExpense}){
             <option value="Savings">Savings</option>
         </select>
 
-        <input type="date" name="Date" id="DateInput" onChange={(e)=>setExpenseForm({...expense, date: e.target.value})} value={expense.date} required/>
+        <input type="date" name="Date" id="DateInput" onChange={(e)=>setExpenseForm({...expense, date: e.target.value})} value={expense.date} placeholder="Choose Date" required/>
 
         <button type="submit" id="addNewExpenseBtn">Add New Expense</button>
 
